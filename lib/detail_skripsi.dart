@@ -74,16 +74,16 @@ class _DetailSkripsiState extends State<DetailSkripsi> {
                       borderRadius:
                           BorderRadius.circular(8), // Mengurangi border radius
                     ),
-                    child: Padding(
+                    child: const Padding(
                       padding:
-                          const EdgeInsets.all(20), // Padding di dalam Card
+                          EdgeInsets.all(20), // Padding di dalam Card
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment
                             .start, // Mengatur posisi teks ke atas
                         crossAxisAlignment: CrossAxisAlignment
                             .start, // Mengatur posisi teks ke kiri
                         children: [
-                          const Text(
+                          Text(
                             'Skripsi', // Teks dalam Card
                             style: TextStyle(
                               fontSize: 24, // Ukuran teks
@@ -91,8 +91,8 @@ class _DetailSkripsiState extends State<DetailSkripsi> {
                               color: Colors.white, // Warna teks
                             ),
                           ),
-                          const SizedBox(height: 10), // Jarak antara teks
-                          const Text(
+                          SizedBox(height: 10), // Jarak antara teks
+                          Text(
                             'Status Progres: DAFTAR JUDUL', // Teks tambahan
                             style: TextStyle(
                               fontSize: 16, // Ukuran teks tambahan
@@ -107,8 +107,8 @@ class _DetailSkripsiState extends State<DetailSkripsi> {
                 const SizedBox(
                     height:
                         10), // Menambahkan jarak antara Card dan teks di bawahnya
-                Padding(
-                  padding: const EdgeInsets.only(
+                const Padding(
+                  padding: EdgeInsets.only(
                       left: 25), // Padding kiri untuk teks
                   child: Column(
                     crossAxisAlignment:
@@ -128,7 +128,7 @@ class _DetailSkripsiState extends State<DetailSkripsi> {
                           color: Colors.black, // Warna teks
                         ),
                       ),
-                      const SizedBox(height: 10),
+                      SizedBox(height: 10),
                       Text(
                         'TEMPAT PENELITIAN', // Teks di bawah Card
                         style: TextStyle(
@@ -143,7 +143,7 @@ class _DetailSkripsiState extends State<DetailSkripsi> {
                           color: Colors.black, // Warna teks
                         ),
                       ),
-                      const SizedBox(height: 10),
+                      SizedBox(height: 10),
                       Text(
                         'ALAMAT PENELITIAN', // Teks di bawah Card
                         style: TextStyle(
@@ -158,7 +158,7 @@ class _DetailSkripsiState extends State<DetailSkripsi> {
                           color: Colors.black, // Warna teks
                         ),
                       ),
-                      const SizedBox(height: 10),
+                      SizedBox(height: 10),
                       Text(
                         'PEMBIMBING', // Teks di bawah Card
                         style: TextStyle(
@@ -173,9 +173,9 @@ class _DetailSkripsiState extends State<DetailSkripsi> {
                           color: Colors.black, // Warna teks
                         ),
                       ),
-                      const SizedBox(height: 10),
+                      SizedBox(height: 10),
                       Padding(
-                        padding: const EdgeInsets.symmetric(
+                        padding: EdgeInsets.symmetric(
                             horizontal: 5), // Padding horizontal untuk Divider
                         child: Divider(
                           // Garis bawah setelah teks terakhir
@@ -183,9 +183,9 @@ class _DetailSkripsiState extends State<DetailSkripsi> {
                           thickness: 1, // Ketebalan garis
                         ),
                       ),
-                      const SizedBox(height: 10), // Spasi sebelum grid
+                      SizedBox(height: 10), // Spasi sebelum grid
                       Padding(
-                        padding: const EdgeInsets.symmetric(
+                        padding: EdgeInsets.symmetric(
                             horizontal: 10), // Padding kiri dan kanan
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment
@@ -202,7 +202,7 @@ class _DetailSkripsiState extends State<DetailSkripsi> {
                                   size: 30, // Ukuran ikon
                                   color: Colors.green, // Warna ikon
                                 ),
-                                const SizedBox(
+                                SizedBox(
                                     width: 10), // Jarak antara ikon dan teks
                                 Expanded(
                                   child: Column(
@@ -217,7 +217,7 @@ class _DetailSkripsiState extends State<DetailSkripsi> {
                                           color: Colors.black, // Warna teks
                                         ),
                                       ),
-                                      const SizedBox(
+                                      SizedBox(
                                           height:
                                               1), // Jarak antara teks utama dan teks kecil
                                       Text(
@@ -241,9 +241,9 @@ class _DetailSkripsiState extends State<DetailSkripsi> {
                           ],
                         ),
                       ),
-                      const SizedBox(height: 10), // Spasi sebelum grid
+                      SizedBox(height: 10), // Spasi sebelum grid
                       Padding(
-                        padding: const EdgeInsets.symmetric(
+                        padding: EdgeInsets.symmetric(
                             horizontal: 10), // Padding kiri dan kanan
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment
@@ -260,7 +260,7 @@ class _DetailSkripsiState extends State<DetailSkripsi> {
                                   size: 30, // Ukuran ikon
                                   color: Colors.grey, // Warna ikon
                                 ),
-                                const SizedBox(
+                                SizedBox(
                                     width: 10), // Jarak antara ikon dan teks
                                 Expanded(
                                   child: Column(
@@ -275,7 +275,7 @@ class _DetailSkripsiState extends State<DetailSkripsi> {
                                           color: Colors.black, // Warna teks
                                         ),
                                       ),
-                                      const SizedBox(
+                                      SizedBox(
                                           height:
                                               1), // Jarak antara teks utama dan teks kecil
                                       Text(
@@ -299,9 +299,9 @@ class _DetailSkripsiState extends State<DetailSkripsi> {
                           ],
                         ),
                       ),
-                      const SizedBox(height: 10), // Spasi sebelum grid
+                      SizedBox(height: 10), // Spasi sebelum grid
                       Padding(
-                        padding: const EdgeInsets.symmetric(
+                        padding: EdgeInsets.symmetric(
                             horizontal: 10), // Padding kiri dan kanan
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment
@@ -318,7 +318,7 @@ class _DetailSkripsiState extends State<DetailSkripsi> {
                                   size: 30, // Ukuran ikon
                                   color: Colors.grey, // Warna ikon
                                 ),
-                                const SizedBox(
+                                SizedBox(
                                     width: 10), // Jarak antara ikon dan teks
                                 Expanded(
                                   child: Column(
@@ -333,7 +333,7 @@ class _DetailSkripsiState extends State<DetailSkripsi> {
                                           color: Colors.grey, // Warna teks
                                         ),
                                       ),
-                                      const SizedBox(
+                                      SizedBox(
                                           height:
                                               1), // Jarak antara teks utama dan teks kecil
                                       Text(
@@ -357,9 +357,9 @@ class _DetailSkripsiState extends State<DetailSkripsi> {
                           ],
                         ),
                       ),
-                      const SizedBox(height: 10), // Spasi sebelum grid
+                      SizedBox(height: 10), // Spasi sebelum grid
                       Padding(
-                        padding: const EdgeInsets.symmetric(
+                        padding: EdgeInsets.symmetric(
                             horizontal: 10), // Padding kiri dan kanan
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment
@@ -376,7 +376,7 @@ class _DetailSkripsiState extends State<DetailSkripsi> {
                                   size: 30, // Ukuran ikon
                                   color: Colors.grey, // Warna ikon
                                 ),
-                                const SizedBox(
+                                SizedBox(
                                     width: 10), // Jarak antara ikon dan teks
                                 Expanded(
                                   child: Column(
@@ -391,7 +391,7 @@ class _DetailSkripsiState extends State<DetailSkripsi> {
                                           color: Colors.grey, // Warna teks
                                         ),
                                       ),
-                                      const SizedBox(
+                                      SizedBox(
                                           height:
                                               1), // Jarak antara teks utama dan teks kecil
                                       Text(
@@ -415,9 +415,9 @@ class _DetailSkripsiState extends State<DetailSkripsi> {
                           ],
                         ),
                       ),
-                      const SizedBox(height: 10), // Spasi sebelum grid
+                      SizedBox(height: 10), // Spasi sebelum grid
                       Padding(
-                        padding: const EdgeInsets.symmetric(
+                        padding: EdgeInsets.symmetric(
                             horizontal: 10), // Padding kiri dan kanan
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment
@@ -434,7 +434,7 @@ class _DetailSkripsiState extends State<DetailSkripsi> {
                                   size: 30, // Ukuran ikon
                                   color: Colors.grey, // Warna ikon
                                 ),
-                                const SizedBox(
+                                SizedBox(
                                     width: 10), // Jarak antara ikon dan teks
                                 Expanded(
                                   child: Column(
@@ -449,7 +449,7 @@ class _DetailSkripsiState extends State<DetailSkripsi> {
                                           color: Colors.grey, // Warna teks
                                         ),
                                       ),
-                                      const SizedBox(
+                                      SizedBox(
                                           height:
                                               1), // Jarak antara teks utama dan teks kecil
                                       Text(

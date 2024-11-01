@@ -74,16 +74,15 @@ class _Detail_KerjaPraktikState extends State<Detail_KerjaPraktik> {
                       borderRadius:
                           BorderRadius.circular(8), // Mengurangi border radius
                     ),
-                    child: Padding(
-                      padding:
-                          const EdgeInsets.all(20), // Padding di dalam Card
+                    child: const Padding(
+                      padding: EdgeInsets.all(20), // Padding di dalam Card
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment
                             .start, // Mengatur posisi teks ke atas
                         crossAxisAlignment: CrossAxisAlignment
                             .start, // Mengatur posisi teks ke kiri
                         children: [
-                          const Text(
+                          Text(
                             'Kerja Praktek', // Teks dalam Card
                             style: TextStyle(
                               fontSize: 24, // Ukuran teks
@@ -91,8 +90,8 @@ class _Detail_KerjaPraktikState extends State<Detail_KerjaPraktik> {
                               color: Colors.white, // Warna teks
                             ),
                           ),
-                          const SizedBox(height: 10), // Jarak antara teks
-                          const Text(
+                          SizedBox(height: 10), // Jarak antara teks
+                          Text(
                             'Status Progres: DAFTAR JUDUL', // Teks tambahan
                             style: TextStyle(
                               fontSize: 16, // Ukuran teks tambahan
@@ -107,9 +106,8 @@ class _Detail_KerjaPraktikState extends State<Detail_KerjaPraktik> {
                 const SizedBox(
                     height:
                         10), // Menambahkan jarak antara Card dan teks di bawahnya
-                Padding(
-                  padding: const EdgeInsets.only(
-                      left: 25), // Padding kiri untuk teks
+                const Padding(
+                  padding: EdgeInsets.only(left: 25), // Padding kiri untuk teks
                   child: Column(
                     crossAxisAlignment:
                         CrossAxisAlignment.start, // Menyelaraskan teks ke kiri
@@ -128,7 +126,7 @@ class _Detail_KerjaPraktikState extends State<Detail_KerjaPraktik> {
                           color: Colors.black, // Warna teks
                         ),
                       ),
-                      const SizedBox(height: 10),
+                      SizedBox(height: 10),
                       Text(
                         'TEMPAT PENELITIAN', // Teks di bawah Card
                         style: TextStyle(
@@ -143,7 +141,7 @@ class _Detail_KerjaPraktikState extends State<Detail_KerjaPraktik> {
                           color: Colors.black, // Warna teks
                         ),
                       ),
-                      const SizedBox(height: 10),
+                      SizedBox(height: 10),
                       Text(
                         'ALAMAT PENELITIAN', // Teks di bawah Card
                         style: TextStyle(
@@ -158,7 +156,7 @@ class _Detail_KerjaPraktikState extends State<Detail_KerjaPraktik> {
                           color: Colors.black, // Warna teks
                         ),
                       ),
-                      const SizedBox(height: 10),
+                      SizedBox(height: 10),
                       Text(
                         'PEMBIMBING', // Teks di bawah Card
                         style: TextStyle(
@@ -173,9 +171,9 @@ class _Detail_KerjaPraktikState extends State<Detail_KerjaPraktik> {
                           color: Colors.black, // Warna teks
                         ),
                       ),
-                      const SizedBox(height: 10),
+                      SizedBox(height: 10),
                       Padding(
-                        padding: const EdgeInsets.symmetric(
+                        padding: EdgeInsets.symmetric(
                             horizontal: 5), // Padding horizontal untuk Divider
                         child: Divider(
                           // Garis bawah setelah teks terakhir
@@ -183,9 +181,9 @@ class _Detail_KerjaPraktikState extends State<Detail_KerjaPraktik> {
                           thickness: 1, // Ketebalan garis
                         ),
                       ),
-                      const SizedBox(height: 10), // Spasi sebelum grid
+                      SizedBox(height: 10), // Spasi sebelum grid
                       Padding(
-                        padding: const EdgeInsets.symmetric(
+                        padding: EdgeInsets.symmetric(
                             horizontal: 10), // Padding kiri dan kanan
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment
@@ -202,7 +200,7 @@ class _Detail_KerjaPraktikState extends State<Detail_KerjaPraktik> {
                                   size: 30, // Ukuran ikon
                                   color: Colors.green, // Warna ikon
                                 ),
-                                const SizedBox(
+                                SizedBox(
                                     width: 10), // Jarak antara ikon dan teks
                                 Expanded(
                                   child: Column(
@@ -217,7 +215,7 @@ class _Detail_KerjaPraktikState extends State<Detail_KerjaPraktik> {
                                           color: Colors.black, // Warna teks
                                         ),
                                       ),
-                                      const SizedBox(
+                                      SizedBox(
                                           height:
                                               1), // Jarak antara teks utama dan teks kecil
                                       Text(
@@ -241,9 +239,9 @@ class _Detail_KerjaPraktikState extends State<Detail_KerjaPraktik> {
                           ],
                         ),
                       ),
-                      const SizedBox(height: 10), // Spasi sebelum grid
+                      SizedBox(height: 10), // Spasi sebelum grid
                       Padding(
-                        padding: const EdgeInsets.symmetric(
+                        padding: EdgeInsets.symmetric(
                             horizontal: 10), // Padding kiri dan kanan
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment
@@ -256,11 +254,11 @@ class _Detail_KerjaPraktikState extends State<Detail_KerjaPraktik> {
                                   .center, // Menyelaraskan item secara vertikal
                               children: [
                                 Icon(
-                                  Icons.credit_card_outlined, // Ikon pertama
+                                  Icons.credit_score_outlined, // Ikon pertama
                                   size: 30, // Ukuran ikon
                                   color: Colors.grey, // Warna ikon
                                 ),
-                                const SizedBox(
+                                SizedBox(
                                     width: 10), // Jarak antara ikon dan teks
                                 Expanded(
                                   child: Column(
@@ -275,7 +273,7 @@ class _Detail_KerjaPraktikState extends State<Detail_KerjaPraktik> {
                                           color: Colors.black, // Warna teks
                                         ),
                                       ),
-                                      const SizedBox(
+                                      SizedBox(
                                           height:
                                               1), // Jarak antara teks utama dan teks kecil
                                       Text(
@@ -299,9 +297,9 @@ class _Detail_KerjaPraktikState extends State<Detail_KerjaPraktik> {
                           ],
                         ),
                       ),
-                      const SizedBox(height: 10), // Spasi sebelum grid
+                      SizedBox(height: 10), // Spasi sebelum grid
                       Padding(
-                        padding: const EdgeInsets.symmetric(
+                        padding: EdgeInsets.symmetric(
                             horizontal: 10), // Padding kiri dan kanan
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment
@@ -314,11 +312,11 @@ class _Detail_KerjaPraktikState extends State<Detail_KerjaPraktik> {
                                   .center, // Menyelaraskan item secara vertikal
                               children: [
                                 Icon(
-                                  Icons.checklist_outlined, // Ikon pertama
+                                  Icons.checklist_rtl_outlined, // Ikon pertama
                                   size: 30, // Ukuran ikon
                                   color: Colors.grey, // Warna ikon
                                 ),
-                                const SizedBox(
+                                SizedBox(
                                     width: 10), // Jarak antara ikon dan teks
                                 Expanded(
                                   child: Column(
@@ -333,7 +331,7 @@ class _Detail_KerjaPraktikState extends State<Detail_KerjaPraktik> {
                                           color: Colors.grey, // Warna teks
                                         ),
                                       ),
-                                      const SizedBox(
+                                      SizedBox(
                                           height:
                                               1), // Jarak antara teks utama dan teks kecil
                                       Text(
@@ -357,9 +355,9 @@ class _Detail_KerjaPraktikState extends State<Detail_KerjaPraktik> {
                           ],
                         ),
                       ),
-                      const SizedBox(height: 10), // Spasi sebelum grid
+                      SizedBox(height: 10), // Spasi sebelum grid
                       Padding(
-                        padding: const EdgeInsets.symmetric(
+                        padding: EdgeInsets.symmetric(
                             horizontal: 10), // Padding kiri dan kanan
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment
@@ -376,7 +374,7 @@ class _Detail_KerjaPraktikState extends State<Detail_KerjaPraktik> {
                                   size: 30, // Ukuran ikon
                                   color: Colors.grey, // Warna ikon
                                 ),
-                                const SizedBox(
+                                SizedBox(
                                     width: 10), // Jarak antara ikon dan teks
                                 Expanded(
                                   child: Column(
@@ -391,7 +389,7 @@ class _Detail_KerjaPraktikState extends State<Detail_KerjaPraktik> {
                                           color: Colors.grey, // Warna teks
                                         ),
                                       ),
-                                      const SizedBox(
+                                      SizedBox(
                                           height:
                                               1), // Jarak antara teks utama dan teks kecil
                                       Text(
@@ -415,9 +413,9 @@ class _Detail_KerjaPraktikState extends State<Detail_KerjaPraktik> {
                           ],
                         ),
                       ),
-                      const SizedBox(height: 10), // Spasi sebelum grid
+                      SizedBox(height: 10), // Spasi sebelum grid
                       Padding(
-                        padding: const EdgeInsets.symmetric(
+                        padding: EdgeInsets.symmetric(
                             horizontal: 10), // Padding kiri dan kanan
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment
@@ -434,7 +432,7 @@ class _Detail_KerjaPraktikState extends State<Detail_KerjaPraktik> {
                                   size: 30, // Ukuran ikon
                                   color: Colors.grey, // Warna ikon
                                 ),
-                                const SizedBox(
+                                SizedBox(
                                     width: 10), // Jarak antara ikon dan teks
                                 Expanded(
                                   child: Column(
@@ -449,7 +447,7 @@ class _Detail_KerjaPraktikState extends State<Detail_KerjaPraktik> {
                                           color: Colors.grey, // Warna teks
                                         ),
                                       ),
-                                      const SizedBox(
+                                      SizedBox(
                                           height:
                                               1), // Jarak antara teks utama dan teks kecil
                                       Text(

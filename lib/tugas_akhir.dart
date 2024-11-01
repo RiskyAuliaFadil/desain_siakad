@@ -55,60 +55,106 @@ class _Tugas_AkhirState extends State<Tugas_Akhir> {
       body: Stack(
         children: [
           Align(
-            alignment: Alignment.topCenter, // Menempatkan tombol di tengah atas
+            alignment: Alignment.topCenter, // Center the buttons at the top
             child: Padding(
-              padding:
-                  const EdgeInsets.only(top: 20), // Menambahkan jarak dari atas
+              padding: const EdgeInsets.only(
+                  top: 70,
+                  left: 30,
+                  right: 30), // Increased top padding for more space
               child: Column(
                 mainAxisSize: MainAxisSize
-                    .min, // Menggunakan ukuran minimal agar tidak mengisi ruang kosong
+                    .min, // Minimal space to avoid filling extra space
                 children: [
-                  ElevatedButton(
-                    onPressed: () {
+                  InkWell(
+                    onTap: () {
                       Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) =>
-                                  const Detail_KerjaPraktik())); // Tambahkan aksi untuk button Kerja Praktik di sini
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const Detail_KerjaPraktik()),
+                      ); // Action for the 'Kerja Praktik' button
                     },
-                    style: ElevatedButton.styleFrom(
-                      foregroundColor: Colors.white,
-                      backgroundColor:
-                          const Color.fromARGB(255, 18, 3, 180), // Warna teks
+                    child: Container(
                       padding: const EdgeInsets.symmetric(
-                        vertical: 70, // Tinggi padding vertikal
-                        horizontal: 110, // Lebar padding horizontal
+                        vertical: 70, // Vertical padding height
+                        horizontal: 110, // Horizontal padding width
                       ),
-                      textStyle: const TextStyle(
-                        fontSize: 24, // Ukuran teks
-                        fontWeight: FontWeight.bold, // Menebalkan teks
+                      decoration: BoxDecoration(
+                        gradient: const LinearGradient(
+                          colors: [
+                            Color.fromARGB(255, 82, 120, 234),
+                            Color.fromARGB(255, 25, 68, 198), // End color
+                            Color.fromARGB(255, 13, 3, 123), // Start color
+                          ],
+                          begin: Alignment.topLeft, // Start from top left
+                          end: Alignment.bottomRight, // End at bottom right
+                        ),
+                        borderRadius: BorderRadius.circular(
+                            8), // Optional rounded corners
+                      ),
+                      child: const Align(
+                        alignment: Alignment
+                            .centerLeft, // Position text more to the left
+                        child: Padding(
+                          padding: EdgeInsets.symmetric(
+                              horizontal:
+                                  20), // Add horizontal padding around the text
+                          child: Text(
+                            'Kerja Praktik',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 24, // Text size
+                              fontWeight: FontWeight.bold, // Bold text
+                            ),
+                          ),
+                        ),
                       ),
                     ),
-                    child: const Text('Kerja Praktik'), // Teks dalam button
                   ),
-                  const SizedBox(height: 20), // Jarak antara tombol
-                  ElevatedButton(
-                    onPressed: () {
+                  const SizedBox(height: 20), // Space between buttons
+                  InkWell(
+                    onTap: () {
                       Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) =>
-                                  const DetailSkripsi())); // Tambahkan aksi untuk button Skripsi di sini
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const DetailSkripsi()),
+                      ); // Action for the 'Skripsi' button
                     },
-                    style: ElevatedButton.styleFrom(
-                      foregroundColor: Colors.white,
-                      backgroundColor:
-                          const Color.fromARGB(255, 227, 227, 1), // Warna teks
+                    child: Container(
                       padding: const EdgeInsets.symmetric(
-                        vertical: 70, // Tinggi padding vertikal
-                        horizontal: 138, // Lebar padding horizontal
+                        vertical: 70, // Vertical padding height
+                        horizontal: 138, // Horizontal padding width
                       ),
-                      textStyle: const TextStyle(
-                        fontSize: 24, // Ukuran teks
-                        fontWeight: FontWeight.bold, // Menebalkan teks
+                      decoration: BoxDecoration(
+                        gradient: const LinearGradient(
+                          colors: [
+                            Color.fromARGB(255, 226, 171, 33), // Start color
+                            Color.fromARGB(255, 228, 188, 75), // End color
+                            Color.fromARGB(255, 238, 210, 144), // Start color
+                          ],
+                          begin: Alignment.topLeft, // Start from top left
+                          end: Alignment.bottomRight, // End at bottom right
+                        ),
+                        borderRadius: BorderRadius.circular(
+                            8), // Optional rounded corners
+                      ),
+                      child: const Align(
+                        alignment: Alignment
+                            .centerLeft, // Position text more to the left
+                        child: Padding(
+                          padding: EdgeInsets.symmetric(
+                              horizontal:
+                                  20), // Add horizontal padding around the text
+                          child: Text(
+                            'Skripsi',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 24, // Text size
+                              fontWeight: FontWeight.bold, // Bold text
+                            ),
+                          ),
+                        ),
                       ),
                     ),
-                    child: const Text('Skripsi'), // Teks dalam button
                   ),
                 ],
               ),
